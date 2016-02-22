@@ -1,0 +1,2 @@
+UPSMON_DORELAX = compile preProcessFileLineNumbers "FMFG\SargeAI\scripts\UPSMON\MODULES\ORDERS\UPSMON_RELAX\fnc\UPSMON_DORELAX.sqf";
+UPSMON_Civaction = compile preProcessFileLineNumbers "FMFG\SargeAI\scripts\UPSMON\MODULES\ORDERS\UPSMON_RELAX\fnc\UPSMON_Civaction.sqf";
