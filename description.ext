@@ -1,4 +1,4 @@
-#include "FMFG\GG_AdminMenu.hpp"
+#include "FMFG\FMFG_AdminMenu.hpp"
 
 // https://community.bistudio.com/wiki/Description.ext#forceRotorLibSimulation
 forceRotorLibSimulation = 2;
@@ -18,7 +18,7 @@ class Header
 {
 	gameType = Sandbox;
 	minPlayers = 1;
-	maxPlayers = 101;
+	maxPlayers = 50;
 };
 
 // DO NOT CHANGE THIS! +
