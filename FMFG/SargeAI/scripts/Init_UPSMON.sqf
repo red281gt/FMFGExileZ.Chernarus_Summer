@@ -86,7 +86,7 @@ UPSMON_ambushdist = 100;
 UPSMON_USE_SMOKE = 20; // org 13: decreased while AI is popping smoke a bit too often
 
 //Allow Relax units during nightime to create fireplace
-UPSMON_Allowfireplace = false;
+UPSMON_Allowfireplace = true;
 
 //Allow Units to Rearm
 UPSMON_AllowRearm = false;
