@@ -1,4 +1,4 @@
-[5,true,true,40] execFSM "FMFG\timeModule.fsm";
+[10,true,true,40] execFSM "FMFG\timeModule.fsm";
 if (isDedicated || isServer) then {
 	"do_MakeBike" addPublicVariableEventHandler {
 		_parameters = (_this select 1);
