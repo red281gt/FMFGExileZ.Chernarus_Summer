@@ -38,7 +38,7 @@ StatusEnabled = true;
 			_dir = round (getDir (vehicle player));
 			_grid = mapGridPosition  player; _xx = (format[_grid]) select  [0,3];
 			_yy = (format[_grid]) select  [3,3];
-			_time = (round(180-(serverTime)/60));
+			_time = (round(150-(serverTime)/60));
 			_hours = (floor(_time/60));
 			_minutes = (_time - (_hours * 60));
 
