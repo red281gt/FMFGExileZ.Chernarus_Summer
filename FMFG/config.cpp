@@ -2026,7 +2026,7 @@ class CfgExileCustomCode
 	ExileClient_object_player_death_startBleedingOut = 	"FMFG\overrides\FMFG_object_player_death_startBleedingOut.sqf";
 	ExileClient_object_player_bambiStateBegin =	 		"FMFG\overrides\FMFG_object_player_bambiStateBegin.sqf";
 	ExileClient_gui_hud_event_onKeyDown = 				"FMFG\overrides\FMFG_gui_hud_event_onKeyDown.sqf";
-	ExileClient_gui_selectSpawnLocation_show = 			"FMFG\overrides\FMFG_gui_selectSpawnLocation_show.sqf";
+	//ExileClient_gui_selectSpawnLocation_show = 			"FMFG\overrides\FMFG_gui_selectSpawnLocation_show.sqf";
 	ExileClient_object_player_event_onKilled = 			"FMFG\overrides\FMFG_object_player_event_onKilled.sqf";
 	ExileClient_object_item_craft = 					"FMFG\overrides\FMFG_object_item_craft.sqf";
 	ExileClient_util_playerEquipment_add = 				"FMFG\overrides\FMFG_util_playerEquipment_add.sqf";
