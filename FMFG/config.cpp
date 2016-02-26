@@ -1746,8 +1746,8 @@ class CfgExileArsenal
 	///////////////////////////////////////////////////////////////////////////////
 	// Hummingbird Armed
 	///////////////////////////////////////////////////////////////////////////////
-	class B_Heli_Light_01_armed_F					{ quality = 1; price = 165000; };
-
+	class B_Heli_Light_01_armed_F					{ quality = 1; price = 40000; };
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// Hummingbird (Civillian)
 	///////////////////////////////////////////////////////////////////////////////
@@ -2026,7 +2026,7 @@ class CfgExileCustomCode
 	ExileClient_object_player_death_startBleedingOut = 	"FMFG\overrides\FMFG_object_player_death_startBleedingOut.sqf";
 	ExileClient_object_player_bambiStateBegin =	 		"FMFG\overrides\FMFG_object_player_bambiStateBegin.sqf";
 	ExileClient_gui_hud_event_onKeyDown = 				"FMFG\overrides\FMFG_gui_hud_event_onKeyDown.sqf";
-	//ExileClient_gui_selectSpawnLocation_show = 			"FMFG\overrides\FMFG_gui_selectSpawnLocation_show.sqf";
+	ExileClient_gui_selectSpawnLocation_show = 			"FMFG\overrides\FMFG_gui_selectSpawnLocation_show.sqf";
 	ExileClient_object_player_event_onKilled = 			"FMFG\overrides\FMFG_object_player_event_onKilled.sqf";
 	ExileClient_object_item_craft = 					"FMFG\overrides\FMFG_object_item_craft.sqf";
 	ExileClient_util_playerEquipment_add = 				"FMFG\overrides\FMFG_util_playerEquipment_add.sqf";
@@ -3792,6 +3792,7 @@ class CfgTraderCategories
 		items[] = 
 		{
 			"Exile_Chopper_Hummingbird_Green",
+			"B_Heli_Light_01_armed_F",
 			"Exile_Chopper_Hummingbird_Civillian_Wasp",
 			"Exile_Chopper_Taru_Black",
 			"Exile_Chopper_Taru_Covered_Black",

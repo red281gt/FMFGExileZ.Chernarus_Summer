@@ -58,7 +58,7 @@ _NoGoAmmoCName = [
 		//GH 2000 RND
 		"2000Rnd_65x39_Belt_Tracer_Green_Splash","2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
 		//PAWNEE 5000 RND
-		"5000Rnd_762x51_Belt","24Rnd_missiles"
+		//"5000Rnd_762x51_Belt","24Rnd_missiles"
 ];
  
 //cost per magazine for individual vehicles

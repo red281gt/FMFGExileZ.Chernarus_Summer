@@ -1,4 +1,4 @@
-[] execVM "FMFG\HC\init.sqf";
+//[] execVM "FMFG\HC\init.sqf";
 if (!isDedicated and hasInterface) then
 
 {
