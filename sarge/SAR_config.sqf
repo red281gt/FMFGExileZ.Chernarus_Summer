@@ -28,7 +28,7 @@ SAR_Base_Gaurds 					= true;		// Turn AI territory gurads on or off
 SAR_dynamic_group_respawn 			= true;		// Turn dynamic grid AI respawn on or off
 SAR_AI_STEAL_VEHICLE 				= true;		// Turn the option for AI using vehicles to reach their destination on or off
 SAR_AI_disable_UPSMON_AI			= false; 	// Turning this off could have unintended consequences
-SAR_respawn_waittime 				= 300;		// How long to wait before dynamic IA respawns
+SAR_respawn_waittime 				= 300;		// How long to wait before dynamic AI respawns
 SAR_DESPAWN_TIMEOUT 				= 120;		// How long to wait before despawning dynamic AI
 SAR_DELETE_TIMEOUT 					= 300;		// How long to wait before deleting dead AI
 SAR_surv_kill_value 				= 250;		// How much respect players lose if killing friendly AI
@@ -43,11 +43,11 @@ SAR_DETECT_FROM_VEHICLE_INTERVAL 	= 5;		// How often AI can detect hostile AI & 
 SAR_chance_bandits 			= 75; 	// Chance to spawn 1-100%
 SAR_chance_soldiers 		= 25; 	// Chance to spawn 1-100%
 SAR_chance_survivors 		= 50; 	// Chance to spawn 1-100%
-SAR_max_grps_bandits 		= 2; 	// Total groups per grid
+SAR_max_grps_bandits 		= 3; 	// Total groups per grid
 SAR_max_grps_soldiers 		= 2; 	// Total groups per grid
 SAR_max_grps_survivors 		= 2; 	// Total groups per grid
-SAR_max_grpsize_bandits 	= 3; 	// Size of the group
-SAR_max_grpsize_soldiers 	= 2;	// Size of the group
+SAR_max_grpsize_bandits 	= 4; 	// Size of the group
+SAR_max_grpsize_soldiers 	= 5;	// Size of the group
 SAR_max_grpsize_survivors 	= 2; 	// Size of the group
 
 // Military AI ----------------------------------------------------------
