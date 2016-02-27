@@ -1,4 +1,7 @@
-//[] execVM "FMFG\HC\init.sqf";
+	[] execVM "FMFG\service\service_point.sqf";
+	[] execVM "FMFG\traderobj\klen.sqf";
+	[] execVM "FMFG\traderobj\stary.sqf";
+	
 if (!isDedicated and hasInterface) then
 
 {
@@ -8,9 +11,7 @@ if (!isDedicated and hasInterface) then
 	[] execVM "FMFG\KillMessages.sqf";
 	[] execVM "FMFG\IgiLoad\IgiLoadInit.sqf";
 	[] execVM "FMFG\money\takegive_poptab_init.sqf";
-	[] execVM "FMFG\service\service_point.sqf";
-	[] execVM "FMFG\traderobj\klen.sqf";
-	[] execVM "FMFG\traderobj\stary.sqf";
+
 
 };
 
