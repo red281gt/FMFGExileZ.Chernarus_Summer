@@ -36,7 +36,7 @@ _NoGoWeapCName = [
         //not allowed ones
         "FFARLauncher_14","2A46M","2A46MRocket","M256","AT5LauncherSingle",
 		//PAWNEE Missiles
-		"missiles_DAR",
+		//"missiles_DAR",
 		//GH Flare
 		"CMFlareLauncher"
 ];
@@ -56,7 +56,7 @@ _NoGoAmmoCName = [
 		//GH 1000 RND
 		"1000Rnd_65x39_Belt_Tracer_Green","1000Rnd_65x39_Belt_Tracer_Yellow",
 		//GH 2000 RND
-		"2000Rnd_65x39_Belt_Tracer_Green_Splash","2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
+		"2000Rnd_65x39_Belt_Tracer_Green_Splash","2000Rnd_65x39_Belt_Tracer_Yellow_Splash"
 		//PAWNEE 5000 RND
 		//"5000Rnd_762x51_Belt","24Rnd_missiles"
 ];

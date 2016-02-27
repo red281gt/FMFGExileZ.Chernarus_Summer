@@ -9,7 +9,8 @@ if (!isDedicated and hasInterface) then
 	[] execVM "FMFG\IgiLoad\IgiLoadInit.sqf";
 	[] execVM "FMFG\money\takegive_poptab_init.sqf";
 	[] execVM "FMFG\service\service_point.sqf";
-	[] execVM "FMFG\traderobj\TraderObjects.sqf"
+	[] execVM "FMFG\traderobj\klen.sqf";
+	[] execVM "FMFG\traderobj\stary.sqf";
 
 };
 
