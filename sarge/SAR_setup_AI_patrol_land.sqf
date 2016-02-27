@@ -32,21 +32,21 @@ if (_argc > 1) then {
             _side = SAR_AI_friendly_side;
             _type = "sold";
             _ai_type = "AI Military";
-			_ai_id =  "id_SAR_sold_man"
+			_ai_id =  "id_SAR_sold_man";
         };
         case 2:
         {
             _side = SAR_AI_friendly_side;
             _type = "surv";
             _ai_type = "AI Survivor";
-			_ai_id =  "id_SAR_surv_lead"
+			_ai_id =  "id_SAR_surv_lead";
         };
         case 3:
         {
             _side = SAR_AI_unfriendly_side;
             _type = "band";
             _ai_type = "AI Bandit";
-			_ai_id =  "id_SAR_band"
+			_ai_id =  "id_SAR_band";
         };
     };
 } else {
