@@ -28,7 +28,7 @@ SAR_AI_hit				= compile preprocessFileLineNumbers "sarge\SAR_aihit.sqf";
 SAR_AI_trace			= compile preprocessFileLineNumbers "sarge\SAR_trace_entities.sqf";
 SAR_AI_base_trace		= compile preprocessFileLineNumbers "sarge\SAR_trace_base_entities.sqf";
 
-if (!isServer) exitWith {};
+if (elec_stop_exec == 1) exitWith {};
 
 SAR_AI					= compile preprocessFileLineNumbers "sarge\SAR_setup_AI_patrol.sqf";
 SAR_AI_heli				= compile preprocessFileLineNumbers "sarge\SAR_setup_AI_patrol_heli.sqf";

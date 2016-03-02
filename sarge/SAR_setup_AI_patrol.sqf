@@ -14,7 +14,7 @@
 */
 private ["_leadername","_type","_patrol_area_name","_grouptype","_snipers","_riflemen","_action","_side","_leaderList","_riflemenlist","_sniperlist","_rndpos","_group","_leader","_cond","_respawn","_leader_weapon_names","_leader_items","_leader_tools","_soldier_weapon_names","_soldier_items","_soldier_tools","_sniper_weapon_names","_sniper_items","_sniper_tools","_leaderskills","_riflemanskills","_sniperskills","_ups_para_list","_respawn_time","_argc","_ai_type"];
 
-if (!isServer) exitWith {};
+if (elec_stop_exec == 1) exitWith {};
 
 _patrol_area_name = _this select 0;
 _grouptype = 		_this select 1;

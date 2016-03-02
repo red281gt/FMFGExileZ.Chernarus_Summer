@@ -1,8 +1,6 @@
 // only run on server (including SP, MP, Dedicated) and Headless Client 
 if (!isServer && hasInterface ) exitWith {};
 
-// run on Headless
-//if(elec_stop_exec == 1) exitWith{};
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 //        These Variables should be checked and set as required, to make the mission runs properly.
@@ -88,10 +86,10 @@ UPSMON_ambushdist = 100;
 UPSMON_USE_SMOKE = 20; // org 13: decreased while AI is popping smoke a bit too often
 
 //Allow Relax units during nightime to create fireplace
-UPSMON_Allowfireplace = true;
+UPSMON_Allowfireplace = false;
 
 //Allow Units to Rearm
-UPSMON_AllowRearm = true;
+UPSMON_AllowRearm = false;
 
 //=============================================================================================================================
 //=============================== DO NOT TOUCH THESE VARIABLES ================================================================

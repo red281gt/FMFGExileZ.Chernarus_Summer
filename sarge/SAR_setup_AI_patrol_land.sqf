@@ -14,7 +14,7 @@
 */
 private ["_riflemenlist","_side","_leader_group","_patrol_area_name","_rndpos","_argc","_grouptype","_respawn","_leader_weapon_names","_leader_items","_leader_tools","_soldier_weapon_names","_soldier_items","_soldier_tools","_leaderskills","_sniperskills","_ups_para_list","_sniperlist","_riflemanskills","_vehicles","_error","_vehicles_crews","_leader","_leadername","_snipers","_riflemen","_veh","_veh_setup","_forEachIndex","_groupvehicles","_sniper_weapon_names","_sniper_items","_sniper_tools","_leader_veh_crew","_type","_respawn_time","_ai_type"];
 
-if (!isServer) exitWith {};
+if (elec_stop_exec == 1) exitWith {};
 
 _patrol_area_name = _this select 0;
 
@@ -32,21 +32,21 @@ if (_argc > 1) then {
             _side = SAR_AI_friendly_side;
             _type = "sold";
             _ai_type = "AI Military";
-			_ai_id =  "id_SAR_sold_man";
+			_ai_id =  "id_SAR_sold_man"
         };
         case 2:
         {
             _side = SAR_AI_friendly_side;
             _type = "surv";
             _ai_type = "AI Survivor";
-			_ai_id =  "id_SAR_surv_lead";
+			_ai_id =  "id_SAR_surv_lead"
         };
         case 3:
         {
             _side = SAR_AI_unfriendly_side;
             _type = "band";
             _ai_type = "AI Bandit";
-			_ai_id =  "id_SAR_band";
+			_ai_id =  "id_SAR_band"
         };
     };
 } else {
