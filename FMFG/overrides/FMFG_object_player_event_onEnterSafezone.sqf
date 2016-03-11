@@ -1,6 +1,4 @@
 /**
- * ExileClient_object_player_event_onEnterSafezone
- *
  * Exile Mod
  * www.exilemod.com
  * © 2015 Exile Mod Team
@@ -9,7 +7,8 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
  
-private["_vehicle","_attachedObjects","_position"];
+private["_vehicle","_attachedObjects","_position", "_vehicles"];
+
 if (ExilePlayerInSafezone) exitWith { false };
 ExilePlayerInSafezone = true;
 if (alive player) then
@@ -29,20 +28,36 @@ if !(_vehicle isEqualTo player) then
 	{
 		_position = getPosATL _vehicle;
 		{
-			if ((typeOf _x) in ["DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"]) then 
+			if ((_x isKindOf "PipeBombBase")) then
 			{
 				detach _x;
 				_x setPosATL [(_position select 0) + random 2, (_position select 1) + random 2, 0.05];
-				_x setDir (random 360);
+				_x setDir (random 260);
 			};
 		}
 		forEach _attachedObjects;
 	};
 	ExileClientSafeZoneVehicle = _vehicle;
 	ExileClientSafeZoneVehicleFiredEventHandler = _vehicle addEventHandler ["Fired", {_this call ExileClient_object_player_event_onFiredSafeZoneVehicle}];
+}
+else
+{
+	_attachedObjects = attachedObjects _vehicle;
+	if !(_attachedObjects isEqualTo []) then 
+	{
+		_position = getPosATL _vehicle;
+		{
+			if ((_x isKindOf "PipeBombBase")) then
+			{
+				detach _x;
+				_x setPosATL [(_position select 0) + random 2, (_position select 1) + random 2, 0.05];
+				_x setDir (random 260);
+			};
+		}
+		forEach _attachedObjects;
+	};
 };
 ExileClientSafeZoneESPEventHandler = addMissionEventHandler ["Draw3D", {20 call ExileClient_gui_safezone_safeESP}];
 ["SafezoneEnter"] call ExileClient_gui_notification_event_addNotification;
-['Beware of thieves, protect your vehicles!',0,0.6,2,0] spawn bis_fnc_dynamictext;
 ExileClientSafeZoneUpdateThreadHandle = [1, ExileClient_object_player_thread_safeZone, [], true] call ExileClient_system_thread_addtask;
 true
