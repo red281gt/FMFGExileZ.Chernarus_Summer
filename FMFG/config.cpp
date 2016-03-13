@@ -24,6 +24,12 @@ class CfgClans
 	*/
 	clanNameAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 -!";
 };
+
+class CfgAdminToolkitCustomMod {
+    AdminToolkit_ModEnable = "exile";
+    AdminToolkit_Mod_Vehicles = "atk\AdminToolkit_Vehicles_Exile.sqf";
+};
+
 class Exile_AbstractCraftingRecipe
 {
 	name = "";
@@ -1879,6 +1885,35 @@ class CfgExileArsenal
 	// HEMMT
 	///////////////////////////////////////////////////////////////////////////////
 	class Exile_Car_HEMMT 								{ quality = 1; price = 12000; };
+	
+	 ///////////////////////////////////////////////////////////////////////////////
+    // Camo Taru Pods
+    ///////////////////////////////////////////////////////////////////////////////
+    class Land_Pod_Heli_Transport_04_covered_F          { quality = 1; price = 1000; };
+    class Land_Pod_Heli_Transport_04_fuel_F             { quality = 1; price = 1000; };
+    class Land_Pod_Heli_Transport_04_box_F              { quality = 1; price = 1000; };
+    class Land_Pod_Heli_Transport_04_repair_F           { quality = 1; price = 1000; };
+    class Land_Pod_Heli_Transport_04_medevac_F          { quality = 1; price = 1000; };
+    class Land_Pod_Heli_Transport_04_bench_F            { quality = 1; price = 1000; };
+	class Land_Pod_Heli_Transport_04_ammo_F				{ quality = 1; price = 50000; };
+    ///////////////////////////////////////////////////////////////////////////////
+    // Black Taru Pods  Actually not Working!!!!!!!!! show only the camo variants
+    ///////////////////////////////////////////////////////////////////////////////
+    //class Land_Pod_Heli_Transport_04_covered_black_F            { quality = 1; price = 1000; };
+    //class Land_Pod_Heli_Transport_04_fuel_black_F                  { quality = 1; price = 1000; };
+    //class Land_Pod_Heli_Transport_04_box_black_F                  { quality = 1; price = 1000; };
+    //class Land_Pod_Heli_Transport_04_repair_black_F              { quality = 1; price = 1000; };
+    //class Land_Pod_Heli_Transport_04_medevac_black_F         { quality = 1; price = 1000; };
+    //class Land_Pod_Heli_Transport_04_bench_black_F             { quality = 1; price = 1000; };    
+    ///////////////////////////////////////////////////////////////////////////////
+    // Huron Pods Beta not lockable!!
+    ///////////////////////////////////////////////////////////////////////////////
+    class B_Slingload_01_Cargo_F                        { quality = 1; price = 1000; };
+    class B_Slingload_01_Fuel_F                            { quality = 1; price = 1000; };
+    class B_Slingload_01_Ammo_F                            { quality = 1; price = 45000; };
+    class B_Slingload_01_Medevac_F                        { quality = 1; price = 1000; };
+    class B_Slingload_01_Repair_F                        { quality = 1; price = 1000; };
+
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Hunter
@@ -2023,7 +2058,7 @@ class CfgExileArsenal
 class CfgExileCustomCode 
 {
 	ExileClient_gui_inventory_event_onSlotDoubleClick = "FMFG\overrides\FMFG_gui_inventory_event_onSlotDoubleClick.sqf";
-	ExileClient_object_player_death_startBleedingOut = 	"FMFG\overrides\FMFG_object_player_death_startBleedingOut.sqf";
+	//ExileClient_object_player_death_startBleedingOut = 	"FMFG\overrides\FMFG_object_player_death_startBleedingOut.sqf";
 	ExileClient_object_player_bambiStateBegin =	 		"FMFG\overrides\FMFG_object_player_bambiStateBegin.sqf";
 	ExileClient_gui_hud_event_onKeyDown = 				"FMFG\overrides\FMFG_gui_hud_event_onKeyDown.sqf";
 	ExileClient_gui_selectSpawnLocation_show = 			"FMFG\overrides\FMFG_gui_selectSpawnLocation_show.sqf";
@@ -2033,6 +2068,7 @@ class CfgExileCustomCode
 	ExileClient_object_player_event_onEnterSafezone = 	"FMFG\overrides\FMFG_object_player_event_onEnterSafezone.sqf";
 	ExileClient_object_item_construct= 					"FMFG\overrides\FMFG_object_item_construct.sqf";\
 	ExileClient_object_player_event_onInventoryOpened = "FMFG\overrides\FMFG_object_player_event_onInventoryOpened.sqf";
+	ExileClient_system_trading_network_purchaseVehicleResponse = "FMFG\overrides\FMFG_system_trading_network_purchaseVehicleResponse.sqf";
 };
 class CfgExileHUD
 {
@@ -2867,6 +2903,7 @@ class CfgTerritories
 		{50000,					150,		600					}  // Level 10
 	};
 
+
 	// A shortcut of the above maximum radius
 	maximumRadius = 150;
 
@@ -2891,6 +2928,7 @@ class CfgTerritories
 	// Amount of pop tabs or respect per object to pay
 	popTabAmountPerObject = 20;
 	respectAmountPerObject = 5;
+	
 };
 class CfgTraderCategories 
 {
@@ -3781,7 +3819,19 @@ class CfgTraderCategories
 			"Exile_Car_HEMMT",
 			"Exile_Car_Ikarus_Blue",
 			"Exile_Car_Ural_Open_Worker",
-			"Exile_Car_Ural_Covered_Worker"
+			"Exile_Car_Ural_Covered_Worker",
+			"Land_Pod_Heli_Transport_04_covered_F",
+			"Land_Pod_Heli_Transport_04_fuel_F",
+			"Land_Pod_Heli_Transport_04_box_F",
+			"Land_Pod_Heli_Transport_04_repair_F",
+			"Land_Pod_Heli_Transport_04_medevac_F",
+			"Land_Pod_Heli_Transport_04_bench_F",
+			"Land_Pod_Heli_Transport_04_ammo_F",
+			"B_Slingload_01_Cargo_F",
+			"B_Slingload_01_Fuel_F",
+			"B_Slingload_01_Ammo_F",
+			"B_Slingload_01_Medevac_F",
+			"B_Slingload_01_Repair_F"
 		};
 	};
 

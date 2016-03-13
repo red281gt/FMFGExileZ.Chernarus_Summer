@@ -1,4 +1,4 @@
-IL_Taru_DevMod = false;
+IL_Taru_DevMod = true;
 
 //above this altitude dropping with parachute
 IL_Taru_Parachute_Altitude = 70;
