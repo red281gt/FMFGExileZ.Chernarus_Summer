@@ -16,18 +16,16 @@ _keyCode = _this select 1;
 _shiftState = _this select 2;
 _controlState = _this select 3;
 _altState = _this select 4; 
+if ((_keyCode in (actionKeys "nightVision")) && ExileClientGasMaskVisible) exitWith {true};
 if (_keyCode in (actionKeys "TacticalView")) exitWith {true};
 if (_keyCode in (actionKeys "Throw")) exitWith
 {
 	_stopPropagation = false;
-	if !(_controlState) then 
+	_grenadeName = (currentThrowable player) select 0;
+	if (_grenadeName isEqualTo "Exile_Item_ZipTie") then 
 	{
-		_grenadeName = (currentThrowable player) select 0;
-		if (_grenadeName isEqualTo "Exile_Item_ZipTie") then 
-		{
-			call ExileClient_object_handcuffs_use;
-			_stopPropagation = true;
-		};
+		call ExileClient_object_handcuffs_use;
+		_stopPropagation = true;
 	};
 	_stopPropagation
 };
@@ -37,11 +35,7 @@ switch (_keyCode) do
 	case 0x0B:	 	{ _stopPropagation = true; };
 	case 0x06: 	{ _stopPropagation = true; };
 	case 0x07: 	{ _stopPropagation = true; };
-	case 0x08:
-    {
-        [] call CHVD_fnc_openDialog;
-        _stopPropagation = true;
-    };
+	case 0x08: 	{ [] call CHVD_fnc_openDialog; _stopPropagation = true; };
 	case 0x09: 	{ _stopPropagation = true; };
 	case 0x0A: 	{ _stopPropagation = true; };
 	case 0x3B: 	{ _stopPropagation = true; };

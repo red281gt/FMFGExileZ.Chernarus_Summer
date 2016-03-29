@@ -8,8 +8,8 @@ if (isDedicated || isServer) then {
 	};
 };
 if (isServer) then {
-	fn_getBuildingstospawnLoot = compile preProcessFileLineNumbers "FMFG\loot\fn_LSgetBuildingstospawnLoot.sqf";
-    LSdeleter = compile preProcessFileLineNumbers "FMFG\loot\LSdeleter.sqf";
-    execVM "FMFG\loot\Lootspawner.sqf";
+	//fn_getBuildingstospawnLoot = compile preProcessFileLineNumbers "FMFG\loot\fn_LSgetBuildingstospawnLoot.sqf";
+   // LSdeleter = compile preProcessFileLineNumbers "FMFG\loot\LSdeleter.sqf";
+    //execVM "FMFG\loot\Lootspawner.sqf";
     execVM "SearchAndReplace.sqf";
 };

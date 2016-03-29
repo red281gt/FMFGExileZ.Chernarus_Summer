@@ -7,7 +7,7 @@ forceRotorLibSimulation = 2;
 disableChannels[] = {0, 2};
 
 author = "[FMFG] FMFG Down South";
-loadScreen = "FMFG\images\logo.jpg"; 
+loadScreen = "FMFG\images\logo1.paa"; 
 onLoadMission= "www.FMFCLANDIVISION.com";
 OnLoadIntro = "";
 OnLoadIntroTime = false;
