@@ -2220,7 +2220,7 @@ class CfgExileEnvironment
 		};
 	};
 
-class Chernarus 
+class Chernarus_Summer
 	{
 		class FireFlies
 		{
